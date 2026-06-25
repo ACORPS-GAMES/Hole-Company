@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://bbcu13pwm1qjg"]
+
+[node name="Node3D" type="Node3D" unique_id=401722380]
+
+[node name="XRNode3D" type="XRNode3D" parent="." unique_id=1175459727]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="." unique_id=1796802140]
