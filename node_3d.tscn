@@ -1,7 +1,19 @@
 [gd_scene format=3 uid="uid://bbcu13pwm1qjg"]
 
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xrv66"]
+
+[sub_resource type="Sky" id="Sky_hqkgv"]
+sky_material = SubResource("ProceduralSkyMaterial_xrv66")
+
+[sub_resource type="Environment" id="Environment_g7b7a"]
+background_mode = 2
+sky = SubResource("Sky_hqkgv")
+
 [node name="Node3D" type="Node3D" unique_id=401722380]
 
-[node name="XRNode3D" type="XRNode3D" parent="." unique_id=1175459727]
+[node name="WorldEnvironment" type="WorldEnvironment" parent="." unique_id=1470505497]
+environment = SubResource("Environment_g7b7a")
 
-[node name="XRCamera3D" type="XRCamera3D" parent="." unique_id=1796802140]
+[node name="XROrigin3D" type="XROrigin3D" parent="." unique_id=1646350753]
+
+[node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D" unique_id=519233651]
