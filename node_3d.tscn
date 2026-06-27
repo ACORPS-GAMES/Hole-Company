@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://bbcu13pwm1qjg"]
 
+[ext_resource type="PackedScene" uid="uid://dwrjlg40blw5r" path="res://Assets/Backrooms.blend" id="1_a202f"]
+
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_xrv66"]
 
 [sub_resource type="Sky" id="Sky_hqkgv"]
@@ -17,3 +19,6 @@ environment = SubResource("Environment_g7b7a")
 [node name="XROrigin3D" type="XROrigin3D" parent="." unique_id=1646350753]
 
 [node name="XRCamera3D" type="XRCamera3D" parent="XROrigin3D" unique_id=519233651]
+
+[node name="Backrooms" parent="." unique_id=1499885799 instance=ExtResource("1_a202f")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.449572, -1.154197, -12.438929)
